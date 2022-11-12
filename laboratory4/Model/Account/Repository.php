@@ -30,8 +30,8 @@ class Repository
             'state = ' . $state . ', ' .
             'salary = ' . $salary . ', ' .
             'children = ' . $children . ' , ' .
-            'experience = ' . $experience . ' , ' .
-            'WHERE id = ' . $code);
+            'experience = ' . $experience . ' ' .
+            'WHERE id =  '. $code .',');
     }
 
     public function deleteAccount($id){

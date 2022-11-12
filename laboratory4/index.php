@@ -38,6 +38,7 @@ var_dump($accountCollections);
 echo "<br>";
 echo '<br> After remowing Account by code <br>';
 
+
 //$saveAccountCollection->addAccount(
 //    $acc1->getFullname(),
 //    $acc1->getState(),
@@ -45,10 +46,10 @@ echo '<br> After remowing Account by code <br>';
 //    $acc1->getChildren(),
 //    $acc1->getExperience(),
 //);
-
+//$saveAccountCollection->addAccount('Igor Michalovych Shevchenko',"head teacher",25000,11,"2 years");
 //$saveAccountCollection->deleteAccount(2);
+$saveAccountCollection->updateAccount(3,'Irina Andriivna Kobal',"director",21000,17,"10 years");
 var_dump($saveAccountCollection->readAccounts());
 $accountCollections->removeAccountByCode(1);
-
 var_dump($accountCollections);
 
